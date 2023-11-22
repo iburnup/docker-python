@@ -2,6 +2,9 @@
 
 To test
 
-`docker-compose run --rm app python test.py`
+```bash
+docker-compose run --rm app python test.py
+```
+
 
 #### Add module dependencies in ./src/requirements.txt
