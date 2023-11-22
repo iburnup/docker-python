@@ -1,0 +1,16 @@
+version: '3.2'
+
+services:
+
+  app:
+    build: 
+      context: './src/'
+    volumes:
+      - ./src/app/:/usr/src/app
+    container_name: python-test
+    environment:
+      TZ: Europe/London
+    command:
+      - python
+      - test.py
+    restart: unless-stopped    
